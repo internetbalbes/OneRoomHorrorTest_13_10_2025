@@ -1,14 +1,9 @@
 using UnityEngine;
 
-public class TargetFollower : MonoBehaviour
+public class TargetPositionFollower : MonoBehaviour
 {
     [SerializeField] private Transform _target;
     [SerializeField] private Vector3 _offset;
-
-    private void Update()
-    {
-        transform.rotation = _target.rotation;
-    }
 
     private void LateUpdate()
     {

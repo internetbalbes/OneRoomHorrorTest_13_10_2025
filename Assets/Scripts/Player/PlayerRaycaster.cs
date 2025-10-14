@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerRaycaster : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Camera _camera;
 
-    // Update is called once per frame
-    void Update()
+    internal event System.Action RaycastCollided;
+
+    private void Update()
     {
-        
+        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out RaycastHit hit))
+        {
+            if (hit.collider.TryGetComponent(out IPlayerRaycastable playerRaycastable))
+            {
+                RaycastCollided?.Invoke();
+            }
+        }
     }
 }
+
