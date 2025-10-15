@@ -66,8 +66,6 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\PlayerRaycaster.cs" />
     <Compile Include="Assets\Scripts\CursorLocker\CursorLocker.cs" />
-    <Compile Include="Assets\Scripts\Interface\InteractableObjectText.cs" />
-    <Compile Include="Assets\Scripts\Item\Interactible.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraVerticalRotatement.cs" />
     <Compile Include="Assets\Scripts\Camera\TargetPositionFollower.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHorizontalRotatement.cs" />
