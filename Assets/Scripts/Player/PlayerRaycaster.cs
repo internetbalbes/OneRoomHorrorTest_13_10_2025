@@ -4,18 +4,13 @@ public class PlayerRaycaster : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
 
-    internal event System.Action RaycastCollided;
-
     private void Update()
     {
-        Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
+        Debug.DrawRay(_camera.transform.position, _camera.transform.forward * 10f, Color.red);
 
-        if (Physics.Raycast(ray, out RaycastHit hit))
+        if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out RaycastHit hitInfo, 10f))
         {
-            if (hit.collider.TryGetComponent(out IPlayerRaycastable playerRaycastable))
-            {
-                RaycastCollided?.Invoke();
-            }
+            Debug.Log($"Hit: {hitInfo.collider.gameObject.name}");
         }
     }
 }

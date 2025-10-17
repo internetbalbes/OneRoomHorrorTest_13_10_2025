@@ -1,25 +1,27 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterController))]
+[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float _speed = 5f;
-
-    private CharacterController _characterController;
-
     private const string Horizontal = nameof(Horizontal);
     private const string Vertical = nameof(Vertical);
 
+    [SerializeField] private float _speed = 5f;
+
+    private Rigidbody _rigidbody;
+
     private void Start()
     {
-        _characterController = GetComponent<CharacterController>();
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        Vector3 direction = new Vector3(Input.GetAxis(Horizontal), 0f, Input.GetAxis(Vertical));
-        Vector3 velocity = direction * _speed;
-        velocity = transform.TransformDirection(velocity);
-        _characterController.Move(velocity * Time.deltaTime);
+        float moveHorizontal = Input.GetAxisRaw(Horizontal);
+        float moveVertical = Input.GetAxisRaw(Vertical);
+
+        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
+
+        _rigidbody.MovePosition(transform.position + movement * _speed * Time.deltaTime);
     }
 }

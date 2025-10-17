@@ -65,13 +65,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\PlayerRaycaster.cs" />
+    <Compile Include="Assets\Scripts\Slot\Slot.cs" />
     <Compile Include="Assets\Scripts\CursorLocker\CursorLocker.cs" />
+    <Compile Include="Assets\Scripts\SkullSlotsObserver\SkullSlotsObserver.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraVerticalRotatement.cs" />
     <Compile Include="Assets\Scripts\Camera\TargetPositionFollower.cs" />
+    <Compile Include="Assets\Scripts\SkullSlotsObserver\SlotsObserver.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHorizontalRotatement.cs" />
     <Compile Include="Assets\Scripts\Camera\TargetHorizontalRotatementFollower.cs" />
     <Compile Include="Assets\Scripts\Item\IPlayerRaycastable.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Skull.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
