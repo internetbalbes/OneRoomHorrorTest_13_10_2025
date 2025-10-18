@@ -21,7 +21,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.87
+    value: 0.8
   color:
     overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
@@ -39,10 +39,10 @@ MonoBehaviour:
     value: -12
   thicknessModifier:
     overrideState: 1
-    value: 10
+    value: 1
   zBias:
     overrideState: 1
-    value: 0.000363
+    value: 0
   directLightingStrength:
     overrideState: 1
     value: 0
@@ -79,13 +79,13 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.261
+    value: 0.312
   smoothness:
     overrideState: 1
     value: 1
   roundness:
     overrideState: 1
-    value: 1
+    value: 0.937
   rounded:
     overrideState: 1
     value: 0
@@ -96,35 +96,7 @@ MonoBehaviour:
   opacity:
     overrideState: 1
     value: 1
---- !u!114 &-2288613833850626578
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
-  m_Name: DepthOfField
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  focusDistance:
-    overrideState: 1
-    value: 2
-  aperture:
-    overrideState: 1
-    value: 32
-  focalLength:
-    overrideState: 1
-    value: 99
-  kernelSize:
-    overrideState: 1
-    value: 3
---- !u!114 &-713011104256576089
+--- !u!114 &-1228825073076380796
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,19 +121,19 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 1
-    value: 2
+    value: 3
   toneCurveToeStrength:
     overrideState: 1
-    value: 0
+    value: 0.303
   toneCurveToeLength:
     overrideState: 1
-    value: 0.5
+    value: 0.428
   toneCurveShoulderStrength:
     overrideState: 1
     value: 0
   toneCurveShoulderLength:
     overrideState: 1
-    value: 0.5
+    value: 0
   toneCurveShoulderAngle:
     overrideState: 1
     value: 0
@@ -177,37 +149,37 @@ MonoBehaviour:
     value: 1
   temperature:
     overrideState: 1
-    value: -9.9
+    value: 0
   tint:
     overrideState: 1
-    value: 100
+    value: 0
   colorFilter:
     overrideState: 1
-    value: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
+    value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 1
     value: 0
   saturation:
     overrideState: 1
-    value: -30.3
+    value: -47
   brightness:
     overrideState: 1
     value: 0
   postExposure:
     overrideState: 1
-    value: 0
+    value: 0.5
   contrast:
     overrideState: 1
-    value: -17.6
+    value: 31
   mixerRedOutRedIn:
     overrideState: 1
-    value: 96
+    value: 100
   mixerRedOutGreenIn:
     overrideState: 1
-    value: 28
+    value: 0
   mixerRedOutBlueIn:
     overrideState: 1
-    value: -39
+    value: 0
   mixerGreenOutRedIn:
     overrideState: 1
     value: 0
@@ -219,22 +191,22 @@ MonoBehaviour:
     value: 0
   mixerBlueOutRedIn:
     overrideState: 1
-    value: -73
+    value: 0
   mixerBlueOutGreenIn:
     overrideState: 1
-    value: -46
+    value: 100
   mixerBlueOutBlueIn:
     overrideState: 1
-    value: 200
+    value: 0
   lift:
-    overrideState: 0
+    overrideState: 1
     value: {x: 1, y: 1, z: 1, w: 0}
   gamma:
-    overrideState: 0
-    value: {x: 0.94046366, y: 1, z: 0.94869024, w: 0}
+    overrideState: 1
+    value: {x: 0.4164098, y: 1, z: 0.5134662, w: 0.031323418}
   gain:
-    overrideState: 0
-    value: {x: 0.9035168, y: 1, z: 0.8998863, w: 0.120481946}
+    overrideState: 1
+    value: {x: 0.97313297, y: 1, z: 0.982176, w: 0.046985116}
   masterCurve:
     overrideState: 1
     value:
@@ -1457,7 +1429,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 1
+    value: 0.25
   fastMode:
     overrideState: 1
     value: 0
@@ -1477,11 +1449,10 @@ MonoBehaviour:
   - {fileID: 9003571479749237248}
   - {fileID: 2258440494728361988}
   - {fileID: -394719200513676765}
-  - {fileID: -713011104256576089}
+  - {fileID: -1228825073076380796}
   - {fileID: -3423372733443229543}
   - {fileID: 5983989417112154507}
   - {fileID: -4823144107845706564}
-  - {fileID: -2288613833850626578}
 --- !u!114 &2258440494728361988
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1528,10 +1499,10 @@ MonoBehaviour:
     value: 1
   size:
     overrideState: 1
-    value: 1.076
+    value: 0.3
   lumContrib:
     overrideState: 1
-    value: 1
+    value: 0
 --- !u!114 &9003571479749237248
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1550,7 +1521,7 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 12.5
+    value: 0
   intensityX:
     overrideState: 1
     value: 1
@@ -1565,4 +1536,4 @@ MonoBehaviour:
     value: 0
   scale:
     overrideState: 1
-    value: 1.1
+    value: 1

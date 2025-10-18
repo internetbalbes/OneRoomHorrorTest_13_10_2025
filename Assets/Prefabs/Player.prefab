@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 8766995915100016304}
   - component: {fileID: 4408188918861342821}
   - component: {fileID: 9191708617203314886}
-  - component: {fileID: 5401854345773186259}
+  - component: {fileID: 6499614413431546093}
   - component: {fileID: 7009942821455156516}
   - component: {fileID: 5256496550234717546}
   - component: {fileID: 4134686908909864406}
-  - component: {fileID: 1240015187604693343}
-  - component: {fileID: 1029840233307183988}
+  - component: {fileID: 95956378198644556}
+  - component: {fileID: 5218197707029042068}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -89,8 +89,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5401854345773186259
-BoxCollider:
+--- !u!136 &6499614413431546093
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,8 +107,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &7009942821455156516
 Rigidbody:
@@ -135,7 +137,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &5256496550234717546
 MonoBehaviour:
@@ -163,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sensitivity: 2
---- !u!114 &1240015187604693343
+--- !u!114 &95956378198644556
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,11 +174,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6671625817790234568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5b9932edc344ce498a3fdd42f7a8875, type: 3}
+  m_Script: {fileID: 11500000, guid: 7eda9be89e1111d47aecc69b6932bcb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 0}
---- !u!114 &1029840233307183988
+--- !u!114 &5218197707029042068
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -185,7 +187,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 6671625817790234568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83b87f56c5ae9ef4aafefa1e3310b5ba, type: 3}
+  m_Script: {fileID: 11500000, guid: bcfc57c4947868941867231e1101be9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lockCursor: 1

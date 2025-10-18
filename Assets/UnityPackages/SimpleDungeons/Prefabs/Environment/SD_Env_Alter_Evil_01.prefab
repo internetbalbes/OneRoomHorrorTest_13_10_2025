@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3373962}
   - component: {fileID: 2380298}
   - component: {fileID: 9583874}
-  - component: {fileID: 9120433254963467198}
+  - component: {fileID: 8562217118266180912}
   m_Layer: 0
   m_Name: SD_Env_Alter_Evil_01
   m_TagString: Untagged
@@ -106,7 +106,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!64 &9120433254963467198
+--- !u!64 &8562217118266180912
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

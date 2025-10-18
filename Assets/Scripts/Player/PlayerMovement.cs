@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+
+        _rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
     private void Update()
@@ -20,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         float moveHorizontal = Input.GetAxisRaw(Horizontal);
         float moveVertical = Input.GetAxisRaw(Vertical);
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical).normalized;
+        Vector3 movement = (transform.forward * moveVertical + transform.right * moveHorizontal).normalized;
 
         _rigidbody.MovePosition(transform.position + movement * _speed * Time.deltaTime);
     }
