@@ -3,16 +3,13 @@ using UnityEngine;
 public class PlayerInputRaycast : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
+    [SerializeField] private float _raycastRange = 7f;
 
-    internal event System.Action<Collider> RaycastHit;
-
-    private float _raycastRange = 7f;
+    public event System.Action<Collider> RaycastHit;
 
     private void Update()
     {
-        Debug.DrawRay(_camera.transform.position, _camera.transform.forward * _raycastRange, Color.red);
-
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (Physics.Raycast(_camera.transform.position, _camera.transform.forward, out RaycastHit hit, _raycastRange))
             {
