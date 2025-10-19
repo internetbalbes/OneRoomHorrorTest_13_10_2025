@@ -3,10 +3,11 @@ using UnityEngine;
 public class DirectionSwitcher : MonoBehaviour, IInteractable
 {
     [SerializeField] private Directions _direction;
+    internal Directions Direction => _direction;
 
     internal event System.Action Switched;
 
-    private enum Directions
+    internal enum Directions
     {
         South, North, East, West
     }

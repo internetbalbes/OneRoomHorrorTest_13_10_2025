@@ -6,6 +6,8 @@ public abstract class SlotsObserver : MonoBehaviour
 
     private void Start()
     {
+        if (_slots.Length == 0) return;
+
         foreach (var slot in _slots)
         {
             slot.Filled += OnSlotFilled;
@@ -14,6 +16,8 @@ public abstract class SlotsObserver : MonoBehaviour
 
     private void OnDisable()
     {
+        if (_slots.Length == 0) return;
+        
         foreach (var slot in _slots)
         {
             slot.Filled -= OnSlotFilled;

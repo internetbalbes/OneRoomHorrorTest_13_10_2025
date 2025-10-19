@@ -12,4 +12,9 @@ public class TargetPositionFollower : MonoBehaviour
             transform.position = _target.position + _offset;
         }
     }
+
+    internal void SetTarget(Transform target)
+    {
+        _target = target;
+    }
 }

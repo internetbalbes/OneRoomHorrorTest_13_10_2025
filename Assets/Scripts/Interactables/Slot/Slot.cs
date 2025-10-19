@@ -11,14 +11,7 @@ public class Slot : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (IsEmpty)
-        {
-            Take();
-        }
-        else
-        {
-            Put(_containedObject);
-        }
+        
     }
 
     internal void Put(GameObject obj)

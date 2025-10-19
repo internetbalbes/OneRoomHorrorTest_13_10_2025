@@ -1,18 +1,33 @@
 using UnityEngine;
 
-public class SkullSlotsObserver : SlotsObserver
+public class SkullSlotsObserver : SlotsObserver, IPuzzleCheck
 {
-    internal event System.Action SlotsFilledCorrectly;
+    public event System.Action<bool> Checked;
+
+    public bool IsCorrect { get; private set; }
 
     protected sealed override void OnSlotFilled()
     {
+        CheckSlots();
+    }
+
+    private void CheckSlots()
+    {
+        bool allHaveSkull = true;
+
         foreach (var slot in _slots)
         {
-            if (slot.IsEmpty) return;
+            if (slot.IsEmpty || slot.ContainedObject.GetComponent<Skull>() == null)
+            {
+                allHaveSkull = false;
+                break;
+            }
+        }
 
-            if (slot.ContainedObject.GetComponent<Skull>() == null) return;
-
-            SlotsFilledCorrectly?.Invoke();
+        if (IsCorrect != allHaveSkull)
+        {
+            IsCorrect = allHaveSkull;
+            Checked?.Invoke(IsCorrect);
         }
     }
 }

@@ -176,6 +176,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8114924986145895791}
   - component: {fileID: 6517195252256516072}
+  - component: {fileID: 1476322502216576015}
+  - component: {fileID: 1058798889490789402}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Untagged
@@ -212,7 +214,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0c3de09d4c4d8438108dece95f31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _type: 0
+--- !u!65 &1476322502216576015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971867513488058348}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.7808434, y: 0.73233795, z: 0.96030426}
+  m_Center: {x: -0.0094768405, y: 0.39594036, z: -0.019847885}
+--- !u!114 &1058798889490789402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7971867513488058348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8ea89c7b5edfa149bf92d05f605debb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 0}
+  _offset: {x: 0, y: 0, z: 0}
 --- !u!1 &8696498036940819073
 GameObject:
   m_ObjectHideFlags: 0

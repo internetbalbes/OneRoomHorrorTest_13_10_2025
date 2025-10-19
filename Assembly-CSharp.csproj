@@ -64,26 +64,28 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.62f2\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Interactables\Slot\SwitcherObserver\SwitchersObserver.cs" />
-    <Compile Include="Assets\Scripts\Interactables\Slot\SwitcherObserver\CorrectSwitch.cs" />
     <Compile Include="Assets\Scripts\Interactables\DirectionSwitcher\DirectionSwitcherDisplay.cs" />
     <Compile Include="Assets\Scripts\Interactables\Slot\SlotsObserver\SlotsObserver.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\TargetPositionFollower.cs" />
     <Compile Include="Assets\Scripts\Interactables\Items\Skull.cs" />
+    <Compile Include="Assets\Scripts\PuzzleManager.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraVerticalRotatement.cs" />
     <Compile Include="Assets\Scripts\Interactables\Switcher\Switcher.cs" />
     <Compile Include="Assets\Scripts\Interactables\DirectionSwitcher\DirectionSwitcher.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IPuzzleCheck.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputRaycast.cs" />
-    <Compile Include="Assets\Scripts\Camera\TargetPositionFollower.cs" />
     <Compile Include="Assets\Scripts\Camera\CursorLocker.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHorizontalRotatement.cs" />
     <Compile Include="Assets\Scripts\Interactables\Switcher\DisplaySwitch.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Items\InteractableItem.cs" />
     <Compile Include="Assets\Scripts\Camera\TargetHorizontalRotatementFollower.cs" />
     <Compile Include="Assets\Scripts\Interactables\Slot\SlotsObserver\SkullSlotsObserver.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Switcher\SwitcherObserver\SwitchersObserver.cs" />
     <Compile Include="Assets\Scripts\Interactables\Slot\Slot.cs" />
-    <Compile Include="Assets\Scripts\Interactables\Items\Item.cs" />
-    <Compile Include="Assets\Scripts\Item\InteractableItem.cs" />
+    <Compile Include="Assets\Scripts\Interactables\DirectionSwitcher\DirectionSwitcherObserver.cs" />
+    <Compile Include="Assets\Scripts\Interactables\Switcher\SwitcherObserver\CorrectSwitch.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInteractStrategy.cs" />
   </ItemGroup>
   <ItemGroup>
